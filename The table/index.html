@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      table {
+        border: 1px solid black;
+      }
+
+      .table2 tr th,
+      .table2 tr td {
+        width: 100px;
+      }
+
+      th,
+      td {
+        border: 2px solid rgb(118, 117, 117);
+        padding: 10px;
+        text-align: center;
+      }
+
+      .pd80 {
+        padding: 10px 90px;
+      }
+
+      .pd {
+        padding: 10px 40px;
+      }
+    </style>
+    <title>Test thẻ table</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="text-align: center">BÀI TẬP</h2>
+      <table>
+        <!-- gồm 3 hàng -->
+        <tr>
+          <td>A</td>
+          <td colspan="2">B</td>
+          <td class="pd80">C</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="pd80">D</td>
+          <td class="pd">E</td>
+          <td>F</td>
+          <td>G</td>
+        </tr>
+
+        <tr>
+          <td class="pd">H</td>
+          <td>I</td>
+          <td>J</td>
+        </tr>
+      </table>
+
+      <hr style="height: 2px; background-color: #818181; margin: 30px 0" />
+
+      <table style="margin-left: auto; margin-right: auto" class="table2">
+        <tr>
+          <th>Tên hàng</th>
+          <th>Tỷ lệ</th>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>44%</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>23%</td>
+        </tr>
+        <tr>
+          <td>Oranges</td>
+          <td>13%</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>10%</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
