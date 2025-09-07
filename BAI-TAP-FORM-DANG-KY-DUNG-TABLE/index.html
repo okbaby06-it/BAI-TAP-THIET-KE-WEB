@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Đăng Ký</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>FORM ĐĂNG KÝ</h2>
+      <!-- gồm 13 hàng -->
+      <form action="">
+        <table>
+          <thead>
+            <th colspan="2" class="thead">ĐĂNG KÝ</th>
+          </thead>
+
+          <tr>
+            <td class="info">Full name</td>
+            <td class="content">
+              <input
+                type="text"
+                class="wthcontent"
+                name="name"
+                placeholder="Nhập tên đầy đủ"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Username</td>
+            <td class="content">
+              <input
+                type="text"
+                class="wthcontent"
+                name="Username"
+                placeholder="Nhập tên đăng nhập"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Password</td>
+            <td class="content">
+              <input
+                type="password"
+                class="wthcontent"
+                name="password"
+                placeholder="Nhập mật khẩu"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Nhập lại Password</td>
+            <td class="content">
+              <input
+                type="password"
+                class="wthcontent"
+                name="password"
+                placeholder="Nhập lại mật khẩu"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Giới tính</td>
+            <td class="content">
+              <!-- name="name" nhóm hai button lại, chỉ một giá trị được chọn-->
+              <input type="radio" id="check_nam" name="name" value="Nam" />
+              <label for="check_nam">Nam</label>
+
+              <input type="radio" id="check_nu" name="name" value="Nữ" />
+              <label for="check_nu">Nữ</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Ngày sinh</td>
+            <td class="content">
+              <input type="date" name="date" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Địa chỉ</td>
+            <td class="content">
+              <!-- khi dữ liệu được gửi thì máy chủ sẽ nhận name=value(giá trị người dùng nhập) -->
+              <textarea
+                name="address"
+                class="wthcontent address"
+                id="messageAddress"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Điện thoại</td>
+            <td class="content">
+              <input
+                type="number"
+                class="wthcontent"
+                name="number"
+                placeholder="+84"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Email</td>
+            <td class="content">
+              <input
+                type="email"
+                class="wthcontent"
+                name="email"
+                placeholder="abc123@gamil.com"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Hình đại diện</td>
+            <td class="content">
+              <input type="file" name="file" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">Sở thích</td>
+            <td class="content">
+              <input
+                type="checkbox"
+                id="xemphim"
+                name="name"
+                value="Xem phim"
+              />
+              <label for="xemphim">Xem phim</label>
+
+              <input
+                type="checkbox"
+                id="nghenhac"
+                name="name"
+                value="Nghe nhạc"
+              />
+              <label for="nghenhac">Nghe nhạc</label>
+
+              <input
+                type="checkbox"
+                id="docsach"
+                name="name"
+                value="Đọc sách"
+              />
+              <label for="docsach">Đọc sách</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" class="info">
+              <div class="footer">
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Ok" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
