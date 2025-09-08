@@ -1,3 +1,4 @@
+/* quy định độ rộng của cả container */
 .container {
   width: 100%;
   max-width: 470px;
@@ -6,6 +7,7 @@
   margin: 0 auto;
 }
 
+/* ăn theo kích thước của container */
 table {
   border: 1px solid black;
   width: 100%;
@@ -21,11 +23,13 @@ h2 {
   text-align: center;
 }
 
+/* chiều cao và font-size cho header của box */
 .thead {
   height: 40px;
   font-size: 25px;
 }
 
+/* phần thông tin bên trái table */
 .info {
   width: 150px;
   height: 25px;
@@ -33,15 +37,18 @@ h2 {
   padding-left: 10px;
 }
 
+/* phần nội dung bên phải table */
 .content {
   padding: 5px 0;
   padding-left: 10px;
 }
 
+/* chiều rộng của thẻ input ăn theo 95% width cha */
 .wthcontent {
   width: 95%;
 }
 
+/* chân table */
 .footer {
   width: 100%;
   display: flex;
@@ -49,6 +56,7 @@ h2 {
   gap: 10px;
 }
 
+/* căn chỉnh textarea */
 .wthcontent.address {
   min-width: 95%;
   min-height: 50px;
