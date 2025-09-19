@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- nhúng font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Thông Tin Sinh Viên</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>THÔNG TIN SINH VIÊN</h2>
+      <form action="">
+        <strong>Thông tin sinh viên</strong>
+        <hr />
+        <!-- table 1 -->
+        <table class="table">
+          <tr>
+            <td class="info">
+              <label for="sbd">Số báo danh</label>
+            </td>
+            <td class="box-input">
+              <input class="width-input" type="text" name="sbd" id="sbd" />
+            </td>
+            <td class="info">
+              <label for="hovaten">Họ và tên</label>
+            </td>
+            <td class="box-input">
+              <input
+                class="width-input"
+                type="text"
+                name="hovaten"
+                id="hovaten"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">
+              <label for="sex">Giới tính</label>
+            </td>
+            <td class="box-input">
+              <input type="radio" name="sex" />Nam
+              <input type="radio" name="sex" />Nữ
+            </td>
+            <td class="info">
+              <label for="date">Ngày sinh</label>
+            </td>
+            <td class="box-input">
+              <input class="width-input" type="date" name="date" id="date" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">
+              <label for="doituong"><strong>Đối tượng</strong></label>
+            </td>
+            <td class="box-input">
+              <select name="doituong" id="doituong" class="width-input">
+                <option value="00">01</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+              </select>
+            </td>
+            <td class="info">
+              <label for="khuvuc">Khu vực</label>
+            </td>
+            <td class="box-input">
+              <select name="khuvuc" id="khuvuc" class="width-input">
+                <option value="kv1">KV1</option>
+                <option value="kv2">KV2</option>
+                <option value="kv3">KV3</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">
+              <label for="hoso">Hồ sơ gồm</label>
+            </td>
+            <td class="box-input">
+              <input type="checkbox" name="hocba" /> Học bạ
+              <input type="checkbox" name="phieudiem" /> Phiếu điểm
+            </td>
+            <td class="info">
+              <label for="nganhDK">Ngành đăng ký</label>
+            </td>
+            <td class="box-input">
+              <select name="nganhDK" id="nganhDK" class="width-input">
+                <option value="cntt">Công nghệ thông tin</option>
+                <option value="qtkd">Quản trị kinh doanh</option>
+                <option value="tcnh">Tài chính ngân hàng</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <!-- đóng table 1 -->
+
+        <strong>Thông tin liên lạc</strong>
+        <hr />
+        <!-- table 2 -->
+        <table class="table table2">
+          <tr>
+            <td class="info">
+              <label for="dienthoai">Điện thoại</label>
+            </td>
+            <td class="box-input">
+              <input
+                class="width-input"
+                type="number"
+                name="dienthoai"
+                id="dienthoai"
+              />
+            </td>
+            <td class="info">
+              <label for="diachi">Địa chỉ liên lạc</label>
+            </td>
+            <td class="box-input" rowspan="2">
+              <textarea
+                name="diachi"
+                id="diachi"
+                class="width-input"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="info">
+              <label for="email"> Email liên lạc </label>
+            </td>
+            <td class="box-input">
+              <input class="width-input" type="email" name="email" id="email" />
+            </td>
+          </tr>
+        </table>
+        <!-- đóng table 2 -->
+
+        <strong>Kết quả học tập</strong>
+        <hr />
+        <!-- table 3 -->
+        <table class="table3">
+          <tr>
+            <td class="desc">Môn</td>
+            <td class="desc">Toán</td>
+            <td class="desc">Lý</td>
+            <td class="desc">Hóa</td>
+            <td class="desc">Sinh</td>
+            <td class="desc">Văn</td>
+            <td class="desc">Sử</td>
+            <td class="desc">Địa</td>
+            <td class="desc">Tiếng anh</td>
+          </tr>
+
+          <tr>
+            <td>Điểm</td>
+            <td>
+              <input class="w80" type="number" name="toan" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="ly" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="hoa" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="sinh" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="van" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="su" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="dia" />
+            </td>
+            <td>
+              <input class="w80" type="number" name="tienganh" />
+            </td>
+          </tr>
+        </table>
+        <!-- đóng table 3 -->
+
+        <div class="button">
+          <input class="btn" type="reset" value="Nhập lại" />
+          <input class="btn" type="reset" value="Xem kết quả" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
